@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Todo List</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>TODO LIST</h1>
+
+    <div class="top">
+
+        <input 
+            type="text" 
+            id="taskInput"
+            placeholder="What are you up to?"
+        >
+
+        <button class="add-btn" onclick="addTask()">
+            Add Task
+        </button>
+
+        <select id="filter" onchange="filterTasks()">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+        </select>
+
+    </div>
+
+    <div id="taskList"></div>
+
+</div>
+<script src="todo.js"></script>
+
+</body>
+</html>
